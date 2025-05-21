@@ -1,4 +1,4 @@
-%% ************************************************************************
+ %% ************************************************************************
 % Model         :  BLDC  six step commutation
 % Description   :  Set Parameters for BLDC Six Step Control
 % File name     :  mcb_bldc_sixstep_f28069mLaunchPad_data.m
