@@ -89,7 +89,7 @@ switch inverter_type
         inverter.model         = 'SBLMB500_v2.0'; 	        % 		// Manufacturer Model Number
         inverter.sn            = '01CTSBLMB500';         	% 		// Manufacturer Serial Number
         inverter.V_dc          = 48;       				    %V      // DC Link Voltage of the Inverter
-        inverter.I_trip        = 20;       				    %Amps   // Max current for trip
+        inverter.I_trip        = 10;       				    %Amps   // Max current for trip
         inverter.Rds_on        = 10.3e-3;     				%Ohms   // Rds ON
         inverter.Rshunt        = 2e-3;    				    %Ohms   // Rshunt
         inverter.CtSensAOffset = 3018;        		    	%Counts // ADC Offset for phase-A

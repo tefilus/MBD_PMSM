@@ -34,7 +34,7 @@ inverter = mcb_SetInverterParameters('SBLMB500');
 
 % Set target hardware parameters
 target = mcb_SetProcessorDetails('F28069M',PWM_frequency);
-target.comport = 'COM9';       % Uncomment and update the appropriate serial port
+target.comport = 'COM4';       % Uncomment and update the appropriate serial port
 
 %% Hall Sequence calibration
 % update hall sequence using "mcb_hall_calibration_f28069mLaunchPad" workflow
@@ -78,12 +78,12 @@ inverter.ISenseVoltPerAmp = inverter.ISenseVoltPerAmp * inverter.ADCGain;
 inverter.ISenseMax = inverter.ISenseMax /inverter.ADCGain;
 
 % Max and min ADC counts for current sense offsets
-inverter.CtSensOffsetMax = 3500; % Maximum permitted ADC counts for current sense offset
-inverter.CtSensOffsetMin = 2500; % Minimum permitted ADC counts for current sense offset
+inverter.CtSensOffsetMax = 4096; % Maximum permitted ADC counts for current sense offset
+inverter.CtSensOffsetMin = 0; % Minimum permitted ADC counts for current sense offset
 
 %% Derive Characteristics
 bldc.N_base = mcb_getBaseSpeed(bldc,inverter); %rpm // Base speed of motor at given Vdc
-speedRefADCOffset = 44;
+speedRefADCOffset = 100;
 % mcb_getCharacteristics(bldc,inverter);
 
 %% PU System details // Set base values for pu conversion

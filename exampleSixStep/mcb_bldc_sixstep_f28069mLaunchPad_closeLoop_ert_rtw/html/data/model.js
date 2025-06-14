@@ -1,1 +1,0 @@
-var modelInfo = {model:"mcb_bldc_sixstep_f28069mLaunchPad_closeLoop"};var modelHierarchy=[{model:"mcb_bldc_sixstep_f28069mLaunchPad_closeLoop",relativePath:"_internal.html",parent:"null"},];
