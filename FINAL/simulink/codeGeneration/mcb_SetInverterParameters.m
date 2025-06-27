@@ -89,12 +89,12 @@ switch inverter_type
         inverter.model         = 'SBLMB500_v2.0'; 	        % 		// Manufacturer Model Number
         inverter.sn            = '01CTSBLMB500';         	% 		// Manufacturer Serial Number
         inverter.V_dc          = 48;       				    %V      // DC Link Voltage of the Inverter
-        inverter.I_trip        = 20;       				    %Amps   // Max current for trip
+        inverter.I_trip        = 10;       				    %Amps   // Max current for trip
         inverter.Rds_on        = 10.3e-3;     				%Ohms   // Rds ON
         inverter.Rshunt        = 2e-3;    				    %Ohms   // Rshunt
-        inverter.CtSensAOffset = 3309;        		    	%Counts // ADC Offset for phase-A
-        inverter.CtSensBOffset = 3304;        		    	%Counts // ADC Offset for phase-B
-        inverter.CtSensCOffset = 3020;        		    	%Counts // ADC Offset for phase-C
+        inverter.CtSensAOffset = 3018;        		    	%Counts // ADC Offset for phase-A
+        inverter.CtSensBOffset = 3309;        		    	%Counts // ADC Offset for phase-B
+        inverter.CtSensCOffset = 3314;        		    	%Counts // ADC Offset for phase-C
         inverter.ADCGain       = 1;                         %       // ADC Gain factor scaled by SPI
         inverter.EnableLogic   = 1;    				    	% 		// Active high for enable pin (EN_GATE)
         inverter.invertingAmp  = 1;   			    		% 		// Currents entering motor phases are read as positive values in this hardware
