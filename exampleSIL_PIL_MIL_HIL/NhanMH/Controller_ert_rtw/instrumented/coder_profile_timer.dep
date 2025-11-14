@@ -1,3 +1,0 @@
-coder_profile_timer.obj: coder_profile_timer.c
-coder_profile_timer.obj: coder_profile_timer.h
-coder_profile_timer.obj: rtwtypes.h
